@@ -1,8 +1,18 @@
-[GIN-debug] GET    /                         --> main.main.func1 (4 handlers)
-[GIN-debug] GET    /book/:from/:to           --> main.handleRequest (4 handlers)
+[GIN-debug] GET    /                         --> main.main.func2 (4 handlers)
+[GIN-debug] GET    /error                    --> main.main.func3 (4 handlers)
+[GIN-debug] GET    /profile                  --> main.main.func4 (4 handlers)
 [GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
 [GIN-debug] Listening and serving HTTP on :8080
-[GIN] 2021/12/13 - 22:34:49 | 200 |     132.625µs |       127.0.0.1 | GET      "/"
-[GIN] 2021/12/13 - 22:34:49 | 404 |         250ns |       127.0.0.1 | GET      "/favicon.ico"
-[GIN] 2021/12/13 - 22:34:58 | 200 |       38.25µs |       127.0.0.1 | GET      "/"
-[GIN] 2021/12/13 - 22:35:05 | 200 |      40.708µs |       127.0.0.1 | GET      "/"
+Count : 1
+127.0.0.1  "GET /profile HTTP/1.1 200 182.834µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36" "
+Count : 2
+127.0.0.1  "GET /profile HTTP/1.1 200 94.125µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36" "
+Count : 3
+127.0.0.1  "GET /profile HTTP/1.1 200 110µs "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.93 Safari/537.36" "
+[GIN-debug] GET    /                         --> main.main.func1 (4 handlers)
+[GIN-debug] GET    /error                    --> main.main.func2 (4 handlers)
+[GIN-debug] GET    /profile                  --> main.main.func3 (4 handlers)
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+Count : 1
+Count : 2
